@@ -1,14 +1,3 @@
-/*********************************************************************/
-/**   ACH2023 - Algoritmos e Estruturas de Dados I                  **/
-/**   EACH-USP - Segundo Semestre de 2020                           **/
-/**   94 - Prof. Luciano Antonio Digiampietri                       **/
-/**                                                                 **/
-/**   EP3 - Fila de Prioridade (utilizando heap)                    **/
-/**                                                                 **/
-/**   Karina Duran Munhos                       11295911            **/
-/**                                                                 **/
-/*********************************************************************/
-
 #include "filaDePrioridade.h"
 
 PFILA criarFila(int max)
@@ -187,7 +176,7 @@ bool reduzirPrioridade(PFILA f, int id, float novaPrioridade)
 //Funcao para remover um elemento, retorna NULL caso a fila esteja vazia
 //Se nao, retorna o elemento contido na primeira posicao do vetor f->heap
 //e posiciona o ultimo elemento no lugar. Entao, chama a funcao reduzirPrioridadeAux
-//Para reposicion·-lo no lugar certo
+//Para reposicion√°-lo no lugar certo
 PONT removerElemento(PFILA f)
 {
     PONT res = NULL;
